@@ -9,22 +9,21 @@ import "./App.css";
 import Button from "react-bootstrap/Button";
 
 import Home from "./components/pages/Home";
-import GMaps from "./components/pages/GMaps";
+import OSM from "./components/pages/OSM";
 
 function App() {
     return (
         <BrowserRouter>
             <div className={'HomeNavContainer'}>
                 <div className={'Nav'}>
-                    <Link to="/"><Button className={'Link'}>Home</Button></Link>
-                    <Link to="/gmaps"><Button className={'Link'}>Google Maps API</Button></Link>
-                    <Link to="/register"><Button className={'Link'}>Register</Button></Link>
+                    <Link to="/"><Button className={'Link'}>Főoldal</Button></Link>
+                    <Link to="/osm"><Button className={'Link'}>Open Street Maps API</Button></Link>
                 </div>
             </div>
             <Routes>
                 <Route path="/">
                     <Route index element={<Home/>}/>
-                    <Route path="/gmaps" element={<GMaps/>}/>
+                    <Route path="/osm" element={<OSM/>}/>
                 </Route>
             </Routes>
         </BrowserRouter>
