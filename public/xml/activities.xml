@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE activities [
+        <!ELEMENT activities (activity)*>
+        <!ELEMENT activity (when,where,relatedUser,note)>
+        <!ELEMENT when (#PCDATA)>
+        <!ELEMENT where (#PCDATA)>
+        <!ELEMENT relatedUser (#PCDATA)>
+        <!ELEMENT note (#PCDATA)>
+        ]>
+<activities>
+    <activity>
+        <when>2022-02-03</when>
+        <where>Rákosszentmihály</where>
+        <relatedUser>vasbanyai.j</relatedUser>
+        <note>Teszt feladat...</note>
+    </activity>
+    <activity>
+        <when>2022-02-02</when>
+        <where>Dabas</where>
+        <relatedUser>dudics.j</relatedUser>
+        <note>Teszt megjegyzés...</note>
+    </activity>
+</activities>

@@ -8,5 +8,7 @@ NodeJS + npm
 ## Installation
 
 ### `npm install`
-## Running
+## Running the webserver
+### `node ws.js`
+## Running the react app
 ### `npm start`
