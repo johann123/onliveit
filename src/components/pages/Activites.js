@@ -1,6 +1,5 @@
-
-export default function Home() {
+export default function Activites() {
     return <div style={{display: "flex", justifyContent: "center"}}>
-        OnLiveIT felvételi feladat
+        Tevékenységek
     </div>
 }

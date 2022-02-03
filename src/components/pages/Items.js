@@ -1,6 +1,6 @@
 
-export default function Home() {
+export default function Items() {
     return <div style={{display: "flex", justifyContent: "center"}}>
-        OnLiveIT felvételi feladat
+        Cikkek
     </div>
 }

@@ -1,6 +1,6 @@
 
-export default function Home() {
+export default function Partners() {
     return <div style={{display: "flex", justifyContent: "center"}}>
-        OnLiveIT felvételi feladat
+        Partnerek
     </div>
 }

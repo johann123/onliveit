@@ -1,6 +1,6 @@
 
-export default function Home() {
+export default function NoMatch() {
     return <div style={{display: "flex", justifyContent: "center"}}>
-        OnLiveIT felvételi feladat
+        No match...
     </div>
 }
