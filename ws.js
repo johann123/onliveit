@@ -2,6 +2,7 @@ const http = require("http");
 const fs = require("fs")
 const xmlFilesList = ['activities'];
 http.createServer(async (req, res) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
     const requestRoute = req.url.substring(1);
     if (xmlFilesList.includes(requestRoute)) {
         res.writeHead(200);
@@ -15,6 +16,6 @@ http.createServer(async (req, res) => {
         res.writeHead(404);
     }
     res.end();
-}).listen(8000, 'localhost', () => {
+}).listen(3000, 'localhost', () => {
     console.log(`ws listening for incoming requests...`)
 });
