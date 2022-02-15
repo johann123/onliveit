@@ -20,4 +20,10 @@
         <relatedUser>dudics.j</relatedUser>
         <note>Teszt megjegyzés...</note>
     </activity>
+    <activity>
+        <when>2022-02-04</when>
+        <where>Budapest</where>
+        <relatedUser>dudics.j</relatedUser>
+        <note>Teszt megjegyzés...</note>
+    </activity>
 </activities>

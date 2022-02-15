@@ -26,7 +26,7 @@ function App() {
             <div className={'HomeNavContainer'}>
                 <div className={'Nav'}>
                     <Link to="/"><Button className={'Link'}>Főoldal</Button></Link>
-                    <Link to="/osm"><Button className={'Link'}>Open Street Maps API</Button></Link>
+                    <Link to="/osm"><Button className={'Link'}>OSM API</Button></Link>
                     <Link to="/register"><Button className={'Link'}>Nyilvántartás (2. feladat)</Button></Link>
                 </div>
             </div>

@@ -1,4 +1,5 @@
 import {XMLParser} from "fast-xml-parser";
+import Entry from "../activities/entry";
 
 let xmlString = '';
 
@@ -10,9 +11,21 @@ fetch(`http://localhost:3000/activities`)
 export default function Activites() {
     let parser = new XMLParser();
     let parsedXML = parser.parse(xmlString);
-    console.log(parsedXML);
-    let activities = parsedXML.activities.activity;
-    return <div style={{display: "flex", justifyContent: "center"}}>a
-        {Object.entries(activities).map((t, k) => console.log(t[1].when))}
-    </div>
+    let activities = {};
+    if (parsedXML.hasOwnProperty('activities')) {
+        activities = parsedXML.activities.activity;
+    }
+    return <table className={'table'}>
+        <thead>
+        <tr>
+            <th scope="col">Mikor</th>
+            <th scope="col">Hol</th>
+            <th scope="col">Felhasználó</th>
+            <th scope="col">Megjegyzés</th>
+        </tr>
+        </thead>
+        <tbody>
+        {Object.entries(activities).map((t, k) => <Entry object={t[1]}/>)}
+        </tbody>
+    </table>
 }
